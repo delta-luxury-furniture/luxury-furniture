@@ -647,7 +647,8 @@ ul:not([class]) > li:before {
 }
 .navbar-expand-xl .navbar-nav .nav-item:hover .nav-link,
 .navbar-expand-xl .navbar-nav .nav-item.active .nav-link {
-  color: #333;
+  /* color: #333; */
+  color: #c89d89;
 }
 .dropdown-toggle::after {
   display: none;
