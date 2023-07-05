@@ -977,6 +977,9 @@ ul:not([class]) > li:before {
   align-items: center;
   justify-content: center;
 }
+.lookbook-copy p.lookbook-txt {
+  font-family: "Barlow", sans-serif;
+}
 
 .explore-content-text {
   display: flex;
@@ -1044,6 +1047,7 @@ ul:not([class]) > li:before {
   padding: 0;
   letter-spacing: 0.07em;
   font-size: 13px;
+  font-family: "Barlow", sans-serif;
 }
 
 .mem-main ul li:before {
@@ -1150,6 +1154,7 @@ h2.front-header-small {
   color: #333;
   margin-top: 40px;
   margin-bottom: 0;
+  font-family: "Barlow", sans-serif;
 }
 .product-content-container {
   background: #f9f9f9;
@@ -1168,6 +1173,9 @@ h2.front-header-small {
   line-height: 32px;
   color: #333;
   margin: 0;
+}
+.heading-copy p {
+  font-family: "Barlow", sans-serif;
 }
 
 .trustpilot-logo img {
@@ -1214,6 +1222,9 @@ h2.rv_name {
   display: inline-block;
 }
 
+.top-collect-copy p {
+  font-family: "Barlow", sans-serif;
+}
 .review_rate .stars .rating {
   background: url(../images/explore/rating.svg) no-repeat center;
 }
@@ -1228,6 +1239,9 @@ h2.rv_name {
 }
 .review_rate {
   margin: 8px 0 10px 0;
+}
+.rv_text {
+  font-family: "Barlow", sans-serif;
 }
 
 .gallery-content-item {
@@ -1293,6 +1307,7 @@ h2.rv_name {
   color: #333333;
   font-size: 14px;
   margin-bottom: 30px;
+  font-family: "Barlow", sans-serif;
 }
 /* ==================================================================================== */
 /* ============================================================================================== */
@@ -1413,7 +1428,7 @@ h2.rv_name {
   margin-bottom: 15px;
 }
 .single-choose-item .choose-content .title {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
   font-weight: 700;
   padding: 15px 0;
@@ -1423,6 +1438,7 @@ h2.rv_name {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
+  font-family: "Barlow", sans-serif;
 }
 .section-title h2 {
   position: relative;
@@ -1550,7 +1566,7 @@ h2.rv_name {
 }
 .counterup__banner--items__text {
   font-size: 2rem;
-  line-height: 3.2rem;
+  line-height: 2.8rem;
   color: #fff;
   font-weight: 600;
 }
@@ -2470,6 +2486,7 @@ h2.rv_name {
 }
 .shop-list-wrap .shop-list-content .product-details-content p {
   margin: 20px 0 0;
+  font-family: "Barlow", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   .shop-list-wrap .shop-list-content .product-details-content p {
@@ -3245,6 +3262,7 @@ h2.rv_name {
 
 #klaviyo_form_msgs p {
   padding-bottom: 20px;
+  font-family: "Barlow", sans-serif;
 }
 
 .input-group .form-control {
