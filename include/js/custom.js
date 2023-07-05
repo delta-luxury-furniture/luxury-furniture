@@ -104,3 +104,84 @@ $(window).scroll(function () {
     $("body").removeClass("fixed");
   }
 });
+/*==========================*/
+/*  Tilt Hover Animation */
+/*==========================*/
+$(".paralax-image").tilt({
+  max: 12,
+  speed: 1e3,
+  easing: "cubic-bezier(.03,.98,.52,.99)",
+  transition: !1,
+  perspective: 1e3,
+  scale: 1,
+});
+/**
+ * When user mouse enters tilt element
+ */
+class mouseEnter {
+  constructor(event) {
+    this.ticking = false;
+    $(this).css({ "will-change": "transform" });
+    setTransition.call(this);
+
+    // Trigger change event
+    $(this).trigger("tilt.mouseEnter");
+  }
+}
+/**
+ * Public methods
+ */
+$.fn.tilt.destroy = function () {
+  $(this).each(function () {
+    $(this).find(".js-tilt-glare").remove();
+    $(this).css({ "will-change": "", transform: "" });
+    $(this).off("mousemove mouseenter mouseleave");
+  });
+};
+// ==============================================
+if (wrapper) {
+  const counters = wrapper.querySelectorAll(".js-counter"),
+    duration = 1e3;
+  let isCounted = !1;
+  document.addEventListener("scroll", function () {
+    const wrapperPos = wrapper.offsetTop - window.innerHeight;
+    !isCounted &&
+      window.scrollY > wrapperPos &&
+      (counters.forEach((counter) => {
+        const countTo = counter.dataset.count,
+          countPerMs = countTo / duration;
+        let currentCount = 0;
+        const countInterval = setInterval(function () {
+          currentCount >= countTo && clearInterval(countInterval),
+            (counter.textContent = Math.round(currentCount)),
+            (currentCount += countPerMs);
+        }, 1);
+      }),
+      (isCounted = !0));
+  });
+}
+// ==============================================================
+const scrollTop = document.getElementById("scroll__top");
+scrollTop.addEventListener("click", function () {
+  window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  console.log("srcoll---->");
+}),
+  window.addEventListener("scroll", function () {
+    window.scrollY > 300
+      ? scrollTop.classList.add("active")
+      : scrollTop.classList.remove("active");
+  });
+// =====================================================================
+
+/*-----------------------
+    Shop filter active 
+------------------------- */
+$(".filter-active a").on("click", function (e) {
+  e.preventDefault();
+  $(".product-filter-wrapper").slideToggle();
+});
+/* Cart dropdown */
+var iconCart = $(".filter-active a");
+iconCart.on("click", function () {
+  $(".filter-active a").toggleClass("active");
+});
