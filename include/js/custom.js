@@ -12,6 +12,25 @@ jQuery(document).ready(function ($) {
       arrows: false,
       infinite: true,
       centerMode: false,
+
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+          },
+        },
+      ],
     });
   }
 
@@ -23,6 +42,23 @@ jQuery(document).ready(function ($) {
       arrows: true,
       infinite: true,
       centerMode: false,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 8000,
+      pauseOnHover: true,
+      cssEase: "linear",
+      variableWidth: true,
+      pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+          },
+        },
+      ],
     });
   }
 

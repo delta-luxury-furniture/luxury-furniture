@@ -903,6 +903,7 @@ ul:not([class]) > li:before {
 /* ==================================================================================== */
 .banner-content-container video {
   width: 100%;
+  position: relative;
 }
 .banner-content-container {
   margin-top: -114px;
@@ -969,6 +970,7 @@ ul:not([class]) > li:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .lookbook-copy {
@@ -995,6 +997,20 @@ ul:not([class]) > li:before {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.explore-content-container:before,
+.explore-member-content-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 40%);
 }
 
 .member-content {
@@ -1028,7 +1044,7 @@ ul:not([class]) > li:before {
 .rc-copy-cont h3 {
   font-size: 1.2em;
   line-height: 27px;
-  color: #333;
+  color: #000;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
@@ -1036,7 +1052,7 @@ ul:not([class]) > li:before {
 
 .rc-copy-cont p.intro {
   margin: 20px 0 10px;
-  color: #333;
+  color: #000;
   font-weight: bold;
 }
 
@@ -1067,7 +1083,7 @@ ul:not([class]) > li:before {
   text-align: center;
   font-size: 1.85em;
   line-height: 32px;
-  color: #333;
+  color: #fff;
 }
 
 .limit {
@@ -3347,7 +3363,7 @@ h2.rv_name {
   .navbar-toggler .navbar-toggler-icon {
     position: relative;
     display: inline-block;
-    width: 30px;
+    width: 24px;
     height: 3px;
     color: #243238;
     text-indent: -55px;
@@ -3358,6 +3374,7 @@ h2.rv_name {
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
     vertical-align: middle;
+    border-radius: 10px;
   }
   .navbar-toggler .navbar-toggler-icon:before,
   .navbar-toggler .navbar-toggler-icon:after {
@@ -3368,6 +3385,7 @@ h2.rv_name {
     position: absolute;
     left: 0;
     transition: all 0.2s ease-out;
+    border-radius: 10px;
   }
   .navbar-toggler.collapsed .navbar-toggler-icon {
     background: #333 !important;
@@ -3418,7 +3436,7 @@ h2.rv_name {
     position: fixed;
     top: 80px;
     left: 0;
-    background: #999;
+    background: #efeeea;
     padding: 0;
     z-index: 99;
     margin: 0;
@@ -3449,7 +3467,7 @@ h2.rv_name {
     line-height: 30px;
     padding: 15px 0;
     position: relative;
-    color: #fff;
+    color: #000;
   }
 
   .navbar-nav.sm-collapsible .sub-arrow {
@@ -3485,6 +3503,54 @@ h2.rv_name {
 ! Medium devices (tablets, less than 992px)
 ========================================== */
 @media (max-width: 991.98px) {
+  .navbar-inside {
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .banner-bottom-text {
+    bottom: 25px;
+    width: 95%;
+    text-align: center;
+  }
+  .banner-text {
+    top: 50%;
+  }
+  h3.dqe-header {
+    font-size: 1.3em;
+  }
+  .gallery-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    display: grid;
+  }
+  .gallery-content img,
+  .gallery-content-item {
+    height: 100%;
+  }
+  .slidein-text {
+    font-size: 24px;
+  }
+  /* ==================== footer ========================== */
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 30px 100px;
+    max-width: 650px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  #newsletter-signup {
+    text-align: center;
+  }
+
+  .input-group {
+    align-items: center;
+    justify-content: center;
+  }
 }
 /* =================================================  
  ! Small devices (landscape phones, less than 768px)
@@ -3508,6 +3574,66 @@ h2.rv_name {
   }
   .content-container {
     padding: 40px 0;
+  }
+  .collection-slider-content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .collection-slider {
+    width: 100%;
+  }
+  .banner-content-container {
+    height: 95vh;
+  }
+
+  .banner-content-container video {
+    height: 95vh;
+    object-fit: cover;
+  }
+
+  .member-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .explore-member-content-container {
+    height: 100%;
+  }
+
+  .rc-copy-cont,
+  h3.dqe-header,
+  .limit-gallery p {
+    text-align: center;
+  }
+  .rc-copy-cont h3,
+  .rc-copy-cont p.intro {
+    color: #fff;
+  }
+
+  .lookbook-copy p.lookbook-txt {
+    text-align: center;
+  }
+  .limit {
+    flex-wrap: wrap;
+  }
+  .press-logo {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .front-press-logos {
+    flex-wrap: wrap;
+  }
+  .panel-heading-limit {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .gallery-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
   }
 }
 /* ======================================================
