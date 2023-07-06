@@ -3381,18 +3381,28 @@ h2.rv_name {
     content: "";
     width: 30px;
     height: 3px;
-    background: #333;
+    background: #fff;
     position: absolute;
     left: 0;
     transition: all 0.2s ease-out;
     border-radius: 10px;
   }
   .navbar-toggler.collapsed .navbar-toggler-icon {
-    background: #333 !important;
+    background: #fff !important;
   }
   .navbar-toggler.collapsed .navbar-toggler-icon:before,
   .navbar-toggler.collapsed .navbar-toggler-icon:after {
-    background: #333;
+    background: #fff;
+  }
+  .fixed #header {
+    background: #efeeea;
+  }
+  .fixed .navbar-toggler.collapsed .navbar-toggler-icon,
+  .fixed .navbar-toggler.collapsed .navbar-toggler-icon:before,
+  .fixed .navbar-toggler.collapsed .navbar-toggler-icon:after,
+  .fixed .navbar-toggler .navbar-toggler-icon:before,
+  .fixed .navbar-toggler .navbar-toggler-icon:after {
+    background: #333 !important;
   }
   .navbar-toggler.collapsed .navbar-toggler-icon:before {
     top: -10px;
