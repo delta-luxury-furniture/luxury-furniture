@@ -3635,6 +3635,11 @@ h2.rv_name {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
   }
+  .limit-gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 /* ======================================================
  ! Extra small devices (portrait phones, less than 576px)
