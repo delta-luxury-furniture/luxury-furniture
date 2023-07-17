@@ -731,7 +731,7 @@ ul:not([class]) > li:last-child {
 }
 .search-box:hover > .search-txt {
   width: 240px;
-  padding: 0 6px;
+  padding: 0 20px;
 }
 .search-box:hover > .search-btn {
   background: #333;
