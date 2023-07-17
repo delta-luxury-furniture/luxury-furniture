@@ -62,6 +62,34 @@ jQuery(document).ready(function ($) {
     });
   }
 
+  if ($(".product-details-slider").length > 0) {
+    jQuery(".product-details-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+      // autoplaySpeed: 0,
+      // speed: 8000,
+      // pauseOnHover: true,
+      // cssEase: "linear",
+      // variableWidth: true,
+      // pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+          },
+        },
+      ],
+    });
+  }
+
   /*==========================*/
   /* Mobile Slider */
   /*==========================*/
