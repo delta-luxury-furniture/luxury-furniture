@@ -740,6 +740,95 @@ ul:not([class]) > li:last-child {
   border: 1px solid #333;
 }
 /* ===================================================== */
+/* ===================================================== */
+
+.tab-wrapper-content {
+  max-width: 100%;
+}
+.tab-wrapper-content .tab-wrapper {
+  text-align: center;
+  display: block;
+  /* margin: auto; */
+  max-width: 100%;
+}
+.tab-wrapper-content .tabs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tab-wrapper-content .tab-link {
+  margin: 0 1%;
+  list-style: none;
+  padding: 10px 40px;
+  color: #aaa;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.5s;
+  border-bottom: solid 3px rgba(255, 255, 255, 0);
+  letter-spacing: 1px;
+}
+.tab-wrapper-content .tab-link:hover {
+  color: #999;
+  border-color: #999;
+}
+.tab-wrapper-content .tab-link.active {
+  color: #333;
+  border-color: #333;
+}
+.tab-wrapper-content .tab-link:nth-of-type(1).active {
+  color: #ee6534;
+  border-color: #ee6534;
+}
+.tab-wrapper-content .tab-link:nth-of-type(2).active {
+  color: #1790d2;
+  border-color: #1790d2;
+}
+.tab-wrapper-content .tab-link:nth-of-type(3).active {
+  color: #eec63b;
+  border-color: #eec63b;
+}
+.tab-wrapper-content .tab-link:nth-of-type(4).active {
+  color: #ee6534;
+  border-color: #ee6534;
+}
+.tab-wrapper-content .tab-link:nth-of-type(5).active {
+  color: #1790d2;
+  border-color: #1790d2;
+}
+.tab-wrapper-content .tab-link:nth-of-type(6).active {
+  color: #eec63b;
+  border-color: #eec63b;
+}
+.tab-wrapper-content .tab-content-wrappers {
+  padding: 40px 0px;
+}
+.content-wrapper-tab-new .tab-content-wrappers {
+  display: none;
+  text-align: center;
+  color: #888;
+  font-weight: 300;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 0.5s ease 1 forwards;
+}
+.content-wrapper-tab-new .tab-content-wrappers.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
 @media only screen and (min-width: 1200px) {
   .navbar-nav > li > .dropdown-menu {
     display: block !important;
