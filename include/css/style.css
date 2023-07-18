@@ -2464,7 +2464,7 @@ h2.rv_name {
   line-height: 24px;
 }
 .single-grid-product .product-content .title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   margin: 0 0 5px;
   font-family: "Barlow", sans-serif;
@@ -2855,7 +2855,7 @@ h2.rv_name {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .product-details-content .pro-details-quality {
-    margin: 40px 0 0;
+    margin: 40px 0;
   }
 }
 @media only screen and (max-width: 767px) {
