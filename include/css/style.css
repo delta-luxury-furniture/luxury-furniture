@@ -2483,6 +2483,7 @@ h2.rv_name {
   color: #1a1a1a;
   margin-bottom: 0;
   font-family: "Barlow", sans-serif;
+  text-transform: capitalize;
 }
 .single-grid-product .product-content p .main-price.discounted del {
   opacity: 0.6;
