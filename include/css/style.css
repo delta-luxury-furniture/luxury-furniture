@@ -4385,6 +4385,9 @@ h2.rv_name {
     margin: 0;
     width: 100%;
   }
+  .navbar-nav {
+    text-align: center;
+  }
 }
 /* ======================================================
  ! Extra small devices (portrait phones, less than 576px)
