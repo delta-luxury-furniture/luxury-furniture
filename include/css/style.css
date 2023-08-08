@@ -447,6 +447,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   max-width: 1200px;
 }
+.container-width .container {
+  max-width: 1400px;
+}
 a,
 input,
 button {
@@ -1130,6 +1133,7 @@ ul:not([class]) > li:last-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 .lookbook-copy p.lookbook-txt {
   font-family: "Barlow", sans-serif;
@@ -1196,7 +1200,7 @@ ul:not([class]) > li:last-child {
 .rc-copy-cont h3 {
   font-size: 1.2em;
   line-height: 27px;
-  color: #000;
+  color: #fff;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
@@ -1204,7 +1208,7 @@ ul:not([class]) > li:last-child {
 
 .rc-copy-cont p.intro {
   margin: 20px 0 10px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -1294,14 +1298,23 @@ h3.dqe-header {
 .limit-conten {
   text-align: center;
 }
-
+.dqe-copy-cont p {
+  text-align: center;
+}
 .front-press-logos {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 40px;
 }
-
+.dqe-copy-cont button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
 .front-press-logos {
   display: flex;
   flex-wrap: nowrap;
@@ -1485,22 +1498,34 @@ h2.rv_name {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 20px 0 25px 0;
 }
 
 .collection-item img {
-  width: 400px;
+  width: 342px;
   height: 400px;
 }
-
+.top-collect-copy h2 {
+  font-size: 28px;
+  text-align: start;
+  margin: 0;
+}
 .collection-slider {
-  width: calc(100% - 400px);
+  width: calc(100% - 340px);
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 0;
 }
-
+.top-collect-copy p{
+  font-size: 14px;
+  text-align: start;
+}
+.top-collect-copy {
+  text-align: start;
+}
 .collection-box {
-  width: 400px;
+  width: 340px;
 }
 .top-collect-prod-card-hover-cont {
   position: absolute;
@@ -1522,6 +1547,7 @@ h2.rv_name {
   position: relative;
   transition: all 0.3s;
   cursor: pointer;
+  margin-right: 20px;
 }
 .top-collect-prod-card-hover-cont h3 {
   font-size: 28px;

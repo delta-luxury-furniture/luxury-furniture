@@ -36,17 +36,17 @@ jQuery(document).ready(function ($) {
 
   if ($(".collection-slider").length > 0) {
     jQuery(".collection-slider").slick({
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
       arrows: true,
       infinite: true,
       centerMode: false,
-      autoplay: true,
-      autoplaySpeed: 0,
-      speed: 8000,
+      // autoplay: true,
+      // autoplaySpeed: 0,
+      speed: 1500,
       pauseOnHover: true,
-      cssEase: "linear",
+      // cssEase: "linear",
       variableWidth: true,
       pauseOnHover: true,
       responsive: [
