@@ -62,6 +62,29 @@ jQuery(document).ready(function ($) {
     });
   }
 
+  if ($(".banner-slider").length > 0) {
+    jQuery(".banner-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      infinite: true,
+      centerMode: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 2000,
+      // responsive: [
+      //   {
+      //     breakpoint: 991,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //     },
+      //   },
+      // ],
+    });
+  }
+
   if ($(".product-details-slider").length > 0) {
     jQuery(".product-details-slider").slick({
       slidesToShow: 1,
