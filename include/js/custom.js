@@ -36,13 +36,13 @@ jQuery(document).ready(function ($) {
 
   if ($(".collection-slider").length > 0) {
     jQuery(".collection-slider").slick({
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       dots: false,
-      arrows: true,
+      arrows: false,
       infinite: true,
       centerMode: false,
-      // autoplay: true,
+      autoplay: true,
       // autoplaySpeed: 0,
       speed: 1500,
       pauseOnHover: true,
