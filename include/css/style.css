@@ -687,8 +687,8 @@ ul:not([class]) > li:last-child {
   z-index: 999;
 }
 .navbar-brand img {
-  filter: invert(94%) sepia(21%) saturate(162%) hue-rotate(285deg)
-    brightness(30%) contrast(100%);
+  /* filter: invert(94%) sepia(21%) saturate(162%) hue-rotate(285deg)
+    brightness(30%) contrast(100%); */
 }
 .navbar-expand-xl .navbar-nav .nav-item {
   margin: 0 25px;
@@ -752,7 +752,7 @@ ul:not([class]) > li:last-child {
 /* =========================================== offer after header ================================================ */
 .desktop-content {
   width: 100%;
-  margin-top: 9px;
+  /* margin-top: 9px; */
 }
 
 .parsys_column-content {
@@ -1278,8 +1278,8 @@ ul:not([class]) > li:last-child {
 #header:hover .navbar-brand img {
   /* filter: invert(99%) sepia(33%) saturate(162%) hue-rotate(285deg)
     brightness(116%) contrast(100%); */
-  filter: invert(94%) sepia(21%) saturate(162%) hue-rotate(285deg)
-    brightness(30%) contrast(100%);
+  /* filter: invert(94%) sepia(21%) saturate(162%) hue-rotate(285deg)
+    brightness(30%) contrast(100%); */
 }
 
 /* ==================================================================================== */
