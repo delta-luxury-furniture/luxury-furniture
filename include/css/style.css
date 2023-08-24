@@ -815,6 +815,14 @@ ul:not([class]) > li:last-child {
 .Linklist__Item a {
   color: #333;
 }
+.Linklist__Item a:hover {
+  color: #9f664a !important;
+}
+.Linklist {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .MegaMenu__PushImageWrapper {
   overflow: hidden;
 }
@@ -2176,7 +2184,8 @@ h2.rv_name {
 .breadcrumb-section-two {
   padding-top: 260px;
   padding-bottom: 190px;
-  margin-top: -114px;
+  /* margin-top: -114px; */
+  background-attachment: fixed;
 }
 .breadcrumb-title-two h1 {
   font-size: 56px;
