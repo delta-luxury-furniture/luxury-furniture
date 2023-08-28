@@ -435,7 +435,7 @@ main {
 /* =================reset css ends here================= */
 /* =================core css starts here================= */
 body {
-  padding-top: 137px;
+  /* padding-top: 67px; */
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -644,10 +644,55 @@ ul:not([class]) > li:last-child {
 }
 /* =================core css ends here================= */
 /* ================= Header Start ================= */
+.collection-toggler-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 3px;
+  color: #243238;
+  text-indent: -55px;
+  margin-top: 0;
+  background: #fff!important;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.collection-toggler:before {
+  top: -10px;
+}
+
+.collection-toggler-icon:before,
+.collection-toggler-icon:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+}
+.collection-toggler-icon:before {
+  top: -10px;
+
+}
+.collection-toggler-icon:after  {
+  bottom: -10px;
+}
+.collection-toggler {
+  height: 24px;
+  width: 35px;
+  position: relative;
+}
 #header {
   color: #333;
+  background: transparent;
   /* background: #fff; */
-  background: #eae8e2;
+  /* background: #eae8e2; */
   /* background-color: #0000001a; */
   position: fixed;
   left: 0;
@@ -659,9 +704,11 @@ ul:not([class]) > li:last-child {
   -webkit-transition: all 0.2s ease-in;
   display: flex;
   align-items: center;
+  /* border-bottom: 1px solid #333; */
+  border-bottom: 1px solid hsla(0,0%,100%,.16);
 }
 #header:hover {
-  background-color: #eae8e2;
+  /* background-color: #eae8e2; */
   transition: all 0.2s ease-in;
 }
 .fixed #header {
@@ -690,22 +737,30 @@ ul:not([class]) > li:last-child {
 .navbar-brand img {
   /* filter: invert(94%) sepia(21%) saturate(162%) hue-rotate(285deg)
     brightness(30%) contrast(100%); */
+    width: 100%;
+    height: 36px;
+    object-fit: contain;
 }
+
 .navbar-expand-xl .navbar-nav .nav-item {
   margin: 0 25px;
 }
 .navbar-expand-xl .navbar-nav .nav-link {
-  font-size: 18px;
-  line-height: 43px;
+  /* font-size: 18px; */
+  font-size: 16px;
+
+  /* line-height: 43px; */
   font-weight: 500;
-  color: #333;
+  color: #fff;
   padding: 0;
   margin: 0;
   font-family: Barlow, sans-serif !important;
-
+  display: block;
+  letter-spacing: .5px;
 }
 .navbar-expand-xl .navbar-nav .nav-link:after {
-  background: #9f664a;
+  /* background: #9f664a; */
+  background: #333;
   content: "";
   display: block;
   height: 2px;
@@ -713,7 +768,8 @@ ul:not([class]) > li:last-child {
   width: 0;
 }
 .navbar-expand-xl .navbar-nav .nav-link:hover:after {
-  background: #9f664a;
+  /* background: #9f664a; */
+  background: #333;
   content: "";
   width: 100%;
 }
@@ -787,15 +843,15 @@ ul:not([class]) > li:last-child {
   border-right: 1px solid #b2a389;
 }
 /* =================================== mega menu ======================================= */
-.navbar-expand-xl .navbar-nav .nav-item:hover .MegaMenu {
+/* .navbar-expand-xl .navbar-nav .nav-item:hover .MegaMenu {
   opacity: 1;
   visibility: visible;
-}
+} */
 .MegaMenu {
-  position: absolute;
-  padding: 20px 0;
+  /* position: absolute; */
+  /* padding: 20px 0; */
   width: 100%;
-  left: 0;
+  /* left: 0;
   top: 100%;
   visibility: hidden;
   opacity: 0;
@@ -803,13 +859,12 @@ ul:not([class]) > li:last-child {
   overflow: auto;
   -ms-scroll-chaining: none;
   overscroll-behavior: contain;
-  text-align: left;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(51, 51, 51, 0.5);
+  text-align: left; */
   /*   background: var(--header-background);
     border-bottom: 1px solid var(--header-border-color);
   */
-  background: #eae8e2;
-  border-bottom: 1px solid #eae8e2;
+
+ 
   transition: all 0.3s ease-in-out;
 }
 .MegaMenu_collection {
@@ -843,9 +898,9 @@ ul:not([class]) > li:last-child {
     transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.MegaMenu {
+/* .MegaMenu {
   max-height: calc(100vh - 210px);
-}
+} */
 
 .MegaMenu[aria-hidden="false"] {
   opacity: 1;
@@ -1189,21 +1244,28 @@ ul:not([class]) > li:last-child {
 
 /* ================= Header End ================= */
 /* ==================================================================================== */
+.header-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
 .navbar-inside {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .header-top {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* border-bottom: 1px solid #fff; */
   position: relative;
-  padding: 20px 0 20px;
+  /* padding: 20px 0 20px; */
+  gap: 20px;
 }
 .fixed .header-top,
 #header:hover .header-top {
@@ -1296,7 +1358,41 @@ ul:not([class]) > li:last-child {
 }
 
 /* ==================================================================================== */
+.search-container {
+  position: relative;
+}
 
+.search-container label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: 1px solid hsla(0,0%,100%,.3);
+  cursor: pointer;
+  min-width: 300px;
+  flex-direction: row-reverse;
+  padding: 8px 12px;
+}
+
+.search-container input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-left: 8px;
+  caret-color: #fff;
+
+}
+
+.search-container button {
+  background: transparent;
+  border: none;
+}
+.search-container button svg path {
+  fill: #fff;
+}
+.search-container input::placeholder {
+  color: #fff;
+}
 /* ===================================== BannerSlider =============================================== */
 .banner-slider {
   overflow: hidden;
@@ -1498,12 +1594,15 @@ ul:not([class]) > li:last-child {
 }
 /* ===================================================================================== */
 /* ========================================================================================== */
+.banners-content-container {
+  /* margin-top: -67px; */
+}
 .banner-content-container video {
   width: 100%;
   position: relative;
 }
 .banner-content-container {
-  /* margin-top: -114px; */
+
   position: relative;
 }
 .banner-content-container video:before {
@@ -4684,6 +4783,9 @@ h2.rv_name {
   }
   #header {
     background: #eae8e2;
+  }
+  .collection-toggler {
+    display: none;
   }
   .navbar {
     padding: 0 15px;
