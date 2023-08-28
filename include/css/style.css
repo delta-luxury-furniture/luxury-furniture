@@ -778,14 +778,14 @@ ul:not([class]) > li:last-child {
   color: #9f664a !important;
 }
 .fixed .navbar-expand-xl .navbar-nav .nav-link {
-  color: #333;
+  color: #333 !important;
 }
 #header:hover .navbar-expand-xl .navbar-nav .nav-link {
   /* color: #333; */
 }
 .navbar-expand-xl .navbar-nav .nav-item:hover .nav-link,
 .navbar-expand-xl .navbar-nav .nav-item.active .nav-link {
-  color: #333;
+  color: #fff;
   /* color: #c89d89; */
 }
 .dropdown-toggle::after {
