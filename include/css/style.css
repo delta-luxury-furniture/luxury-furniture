@@ -3688,7 +3688,7 @@ h2.rv_name {
   }
 }
 .product-details-content .pro-details-cart {
-  margin: 0px 22px 0px 11px;
+  /* margin: 0px 22px 0px 11px; */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .product-details-content .pro-details-cart {
@@ -5018,7 +5018,40 @@ h2.rv_name {
 .about-full-content img {
   width: 100%;
 }
-/* ============================================================================ */
+/* ===================================  cart  css ========================================= */
+.cart-item-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.cart-image img {
+  width: 350px;
+}
+
+.cart-detail .product-details-content {
+  padding: 0;
+}
+
+.cart-item-name h2 {
+  font-size: 20px;
+  line-height: 35px;
+  font-family: "Raleway", sans-serif;
+}
+
+.cart-detail p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.cart-detail {
+  width: 100%;
+}
+
+.cart-image {
+  max-width: 350px;
+  width: 100%;
+}
 
 /* ========================================== 
 ! Large devices (desktops, less than 1200px)
