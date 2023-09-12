@@ -3644,7 +3644,7 @@ h2.rv_name {
 .product-details-content .fz-16 {
   font-size: 16px;
   line-height: 30px;
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
