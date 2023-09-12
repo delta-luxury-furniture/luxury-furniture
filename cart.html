@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delta Modern Furniture</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="include/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/x-icon" href="./include/images/favicon.png" />
+    <link href="include/css/style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/20dd01c86d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--============================== Header Start ==============================-->
+    <header id="header">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <div class="nav-inside">
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="header-main-content">
+              <div class="header-top">
+                <div class="upper-header desktop-search">
+                  <div class="upper-header-left">
+                    <div class="search-box">
+                      <input
+                        class="search-txt"
+                        type="text"
+                        name=""
+                        placeholder="Type to Search"
+                      />
+                      <a class="search-btn" href="#">
+                        <img
+                          src="./include/images/header/search.svg"
+                          alt="search"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="collection-toggle">
+                  <a
+                    class="collection-toggler"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample"
+                  >
+                    <span class="collection-toggler-icon"></span>
+                  </a>
+                </div>
+
+                <a class="navbar-brand" href="index.html"
+                  ><img src="include/images/deltalogo.png" alt=""
+                /></a>
+                <div class="search-container">
+                  <form
+                    class="ais-SearchBox-form"
+                    role="search"
+                    name="searchbar"
+                    action=""
+                    method="get"
+                  >
+                    <label for="search-input" class="algolia-input">
+                      <input
+                        id="search-input"
+                        class="ais-SearchBox-input hide"
+                        type="search"
+                        autocapitalize="off"
+                        autocomplete="off"
+                        autocorrect="off"
+                        placeholder="What are you looking for?"
+                        value=""
+                      />
+                      <button
+                        type="submit"
+                        title="Search"
+                        class="ais-SearchBox-submit"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.6464 21.3536C20.8417 21.5488 21.1583 21.5488 21.3536 21.3536C21.5488 21.1583 21.5488 20.8417 21.3536 20.6464L20.6464 21.3536ZM18.3824 10.9412C18.3824 15.0508 15.0508 18.3824 10.9412 18.3824V19.3824C15.6031 19.3824 19.3824 15.6031 19.3824 10.9412H18.3824ZM10.9412 18.3824C6.83153 18.3824 3.5 15.0508 3.5 10.9412H2.5C2.5 15.6031 6.27924 19.3824 10.9412 19.3824V18.3824ZM3.5 10.9412C3.5 6.83153 6.83153 3.5 10.9412 3.5V2.5C6.27924 2.5 2.5 6.27924 2.5 10.9412H3.5ZM10.9412 3.5C15.0508 3.5 18.3824 6.83153 18.3824 10.9412H19.3824C19.3824 6.27924 15.6031 2.5 10.9412 2.5V3.5ZM21.3536 20.6464L16.9196 16.2125L16.2125 16.9196L20.6464 21.3536L21.3536 20.6464Z"
+                            fill="#1C1C1C"
+                          ></path>
+                        </svg>
+                      </button>
+                    </label>
+                  </form>
+                </div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-inside m-auto">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasExample"
+                        role="button"
+                        aria-controls="offcanvasExample"
+                        >Product</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shoplook.html">Shop the look</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="showroom.html">Showroom</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="upper-header mobile-search">
+                  <div class="upper-header-left">
+                    <div class="search-box">
+                      <input
+                        class="search-txt"
+                        type="text"
+                        name=""
+                        placeholder="Type to Search"
+                      />
+                      <a class="search-btn" href="#">
+                        <img
+                          src="./include/images/header/search.svg"
+                          alt="search"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <a class="navbar-brand" href="index.html"
+                      ><img src="include/images/deltalogo2.png" alt=""
+                    /></a>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="MegaMenu" aria-hidden="true">
+                    <div class="MegaMenu__Inner">
+                      <div class="MegaMenu__Item MegaMenu__Item--fit">
+                        <a
+                          href="#"
+                          class="MegaMenu__Title Heading Text--subdued u-h7"
+                        >
+                          COLLECTIONS
+                        </a>
+                        <ul class="Linklist">
+                          <li class="Linklist__Item">
+                            <a href="/sofa.html" class="Link Link--secondary"
+                              >Sofa's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/armchair.html"
+                              class="Link Link--secondary"
+                              >Armchair's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/Officeswivelchairs.html"
+                              class="Link Link--secondary"
+                              >Office Swivel Chair's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/bedstool.html"
+                              class="Link Link--secondary"
+                              >Bed Stool's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a href="/pouf.html" class="Link Link--secondary"
+                              >Pouf's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a href="/chair.html" class="Link Link--secondary"
+                              >Chair's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/barchair.html"
+                              class="Link Link--secondary"
+                              >Bar Chair</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/modularcabinet.html"
+                              class="Link Link--secondary"
+                              >Modular Cabinet's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/coffeetable.html"
+                              class="Link Link--secondary"
+                              >Coffee Tables</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a href="/beds.html" class="Link Link--secondary"
+                              >Bed's</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/sideboards.html"
+                              class="Link Link--secondary"
+                              >Sideboards</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/bedsidecabinet.html"
+                              class="Link Link--secondary"
+                              >Bedside cabinet</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a
+                              href="/diningtables.html"
+                              class="Link Link--secondary"
+                              >Dining Tables</a
+                            >
+                          </li>
+                          <li class="Linklist__Item">
+                            <a href="/desk.html" class="Link Link--secondary"
+                              >Desks</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--============================== Header End ==============================-->
+
+    <!--============================== Main Start ==============================-->
+    <main id="main">
+      <!--============================== Content Start ==============================-->
+
+      <div
+        class="breadcrumb-section-two section bg-image"
+        style="background-image: url(./include/images/explore/D.png)"
+      >
+        <div class="container">
+          <div
+            class="row os-animation"
+            data-os-animation="fadeIn"
+            data-os-animation-delay="0.5s"
+          >
+            <div class="row">
+              <div class="col">
+                <div class="breadcrumb-title-two text-center">
+                  <h1>Cart</h1>
+                  <ul class="page-breadcrumb-two">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Cart</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============================== Content End ==============================-->
+
+      <!--============================== Content Start ==============================-->
+      <div class="content-container">
+        <div class="container">
+          <div
+            class="row os-animation"
+            data-os-animation="fadeInUp"
+            data-os-animation-delay="0.7s"
+          >
+            <div
+              class="showroom-get-touch-content form-cart-content d-flex align-items-start"
+            >
+              <div class="form-box-container">
+                <form action="#">
+                  <label for="">Fill Your Details</label>
+                  <div class="d-flex gap-1">
+                    <div class="form-group w-50">
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group w-50">
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="companyName"
+                      placeholder="Company Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <select
+                      id="country"
+                      name="country"
+                      aria-placeholder="Select country"
+                      required
+                    >
+                      <option value="Australia">Australia</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="houseNumber"
+                      placeholder="House Name and street name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="houseNumber"
+                      placeholder="Apartment, suite, unit etc (Optional)"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="houseNumber"
+                      placeholder="Town / City"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <select
+                      id="country"
+                      name="country"
+                      aria-placeholder="Select country"
+                      required
+                    >
+                      <option value="Queensland">Queensland</option>
+                      <option value="Albury-Wodonga">Albury-Wodonga</option>
+                      <option value="Balranald">Balranald</option>
+                      <option value="Sydney">Sydney</option>
+                      <option value="Melbourne">Melbourne</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="pinNumber"
+                      placeholder="Postcode / ZIP"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      placeholder="Phone"
+                      id="phone"
+                      name="phoneNumber"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      placeholder="E-Mail"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="form-box-container">
+                <form action="#">
+                  <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Notes after your order e.g. special notes for delivery."
+                      required
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="border-top"></div>
+            <div class="w-100 d-flex align-items-center justify-content-end">
+              <button type="submit" class="btn btn-primary mt-5 w-25">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--============================== Content End ==============================-->
+    </main>
+    <!--============================== Main End ==============================-->
+    <!--============================== Footer Start ==============================-->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-content">
+              <div class="footer-content-item">
+                <ul>
+                  <li>Help</li>
+                  <li>Contact Us</li>
+                  <li>FAQ</li>
+                  <li>Store policy</li>
+                  <li>Product Care</li>
+                </ul>
+              </div>
+              <div class="footer-content-item">
+                <ul>
+                  <li>Discover</li>
+                  <li>AR 3D Planner</li>
+                  <li>Trade</li>
+                  <li>Sustainability</li>
+                  <li>Membership</li>
+                </ul>
+              </div>
+              <section
+                id="newsletter-signup"
+                class="block-uc-klaviyo email-sub-form setright"
+              >
+                <h2>Join our mailing list</h2>
+                <form
+                  class="klaviyo-subscribe-form"
+                  autocomplete="on"
+                  method="post"
+                  id="uc-klaviyo-subscribe-form"
+                  accept-charset="UTF-8"
+                >
+                  <div>
+                    <div class="klaviyo-subscribe-form-description"></div>
+                    <div id="klaviyo_form_msgs">
+                      <p class="mobile-center">
+                        Get the latest updates on promotions, new products,
+                        news, and much more.
+                      </p>
+                    </div>
+                    <div class="input-group clearfix">
+                      <div
+                        class="form-item form-item-mergevars-email form-type-emailfield form-group"
+                      >
+                        <input
+                          placeholder="Email Address"
+                          autocomplete="email"
+                          title="Email Address"
+                          class="form-control form-text form-email required"
+                          type="email"
+                          id="edit-mergevars-email"
+                          name="mergevars[email]"
+                          value=""
+                          size="25"
+                          maxlength="128"
+                          fdprocessedid="3pu1ud"
+                        />
+                        <!-- <label
+                          class="control-label element-invisible"
+                          for="edit-mergevars-email"
+                          >Email
+                          <span
+                            class="form-required"
+                            title="This field is required."
+                            >*</span
+                          ></label
+                        > -->
+                      </div>
+                      <input type="hidden" name="form_build_id" /><input
+                        type="hidden"
+                        name="form_id"
+                      /><span class="input-group-btn"
+                        ><div
+                          class="form-actions form-wrapper form-group"
+                          id="edit-actions"
+                        >
+                          <button
+                            class="btn btn-default form-submit ajax-processed"
+                            type="submit"
+                            name="op"
+                            value="SIGN UP!"
+                          >
+                            SIGN UP!
+                          </button>
+                        </div></span
+                      >
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="limit-copyright">
+          <div class="region region-copyright row">
+            <section class="col-xs-12 justify-center">
+              <p>
+                <a href="#" target="_blank" title="Terms">Terms</a>
+                <span class="dot">•</span>
+                <a href="#" target="_blank" title="Privacy Policy">Privacy</a>
+                <span class="dot">•</span>
+                <a href="#" target="_blank">Accessibility Policy</a>
+                <span class="dot">•</span>
+                <a
+                  href="#"
+                  target="_blank"
+                  title="California Privacy Notice Privacy Policy"
+                  >California Privacy Notice</a
+                >
+                <span class="dot">•</span>
+                <a
+                  href="#"
+                  target="_blank"
+                  title="Not Sell or Share My Personal Information"
+                  >Your Privacy Choices
+                  <img
+                    style="width: 25px"
+                    alt=""
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAzMCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM1NTBfNzMyKSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjIuNTk5OSAwSDcuMzk5OUMzLjQ5OTkgMCAwLjM5OTkwMiAzLjEgMC4zOTk5MDIgN0MwLjM5OTkwMiAxMC45IDMuNDk5OSAxNCA3LjM5OTkgMTRIMjIuNTk5OUMyNi40OTk5IDE0IDI5LjU5OTkgMTAuOSAyOS41OTk5IDdDMjkuNTk5OSAzLjEgMjYuMzk5OSAwIDIyLjU5OTkgMFpNMS41OTk5IDdDMS41OTk5IDMuOCA0LjE5OTkgMS4yIDcuMzk5OSAxLjJIMTcuMjk5OUwxNC4xOTk5IDEyLjhINy4zOTk5QzQuMTk5OSAxMi44IDEuNTk5OSAxMC4yIDEuNTk5OSA3WiIgZmlsbD0iIzMzMzMzMyIvPgo8cGF0aCBkPSJNMjQuNiAzLjk5OTYxQzI0LjggNC4xOTk2MSAyNC44IDQuNTk5NjEgMjQuNiA0Ljc5OTYxTDIyLjUgNi45OTk2MUwyNC43IDkuMTk5NjFDMjQuOSA5LjM5OTYxIDI0LjkgOS43OTk2MSAyNC43IDkuOTk5NjFDMjQuNSAxMC4xOTk2IDI0LjEgMTAuMTk5NiAyMy45IDkuOTk5NjFMMjEuNyA3Ljc5OTYxTDE5LjUgOS45OTk2MUMxOS4zIDEwLjE5OTYgMTguOSAxMC4xOTk2IDE4LjcgOS45OTk2MUMxOC41IDkuNzk5NjEgMTguNSA5LjM5OTYxIDE4LjcgOS4xOTk2MUwyMC44IDYuOTk5NjFMMTguNiA0Ljc5OTYxQzE4LjQgNC41OTk2MSAxOC40IDQuMTk5NjEgMTguNiAzLjk5OTYxQzE4LjggMy43OTk2MSAxOS4yIDMuNzk5NjEgMTkuNCAzLjk5OTYxTDIxLjYgNi4xOTk2MUwyMy44IDMuOTk5NjFDMjMuOTk5OSAzLjc5OTYxIDI0LjQgMy43OTk2MSAyNC42IDMuOTk5NjFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTIuNyA0LjA5OTIyQzEyLjkgNC4yOTkyMiAxMyA0LjY5OTIyIDEyLjggNC44OTkyMkw4LjYgOS43OTkyMkM4LjUgOS44OTkyMiA4LjQgOS45OTkyMiA4LjMgOS45OTkyMkM4LjEgMTAuMDk5MiA3LjggMTAuMDk5MiA3LjYgOS44OTkyMkw1LjQgNy42OTkyMkM1LjIgNy40OTkyMiA1LjIgNy4wOTkyMiA1LjQgNi44OTkyMkM1LjYgNi42OTkyMiA2IDYuNjk5MjIgNi4yIDYuODk5MjJMOCA4LjU5OTIyTDExLjggNC4wOTkyMkMxMiAzLjg5OTIyIDEyLjQgMy44OTkyMiAxMi43IDQuMDk5MjJaIiBmaWxsPSIjMzMzMzMzIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMzU1MF83MzIiPgo8cmVjdCB3aWR0aD0iMzAiIGhlaWdodD0iMTQiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg=="
+                /></a>
+                <br />2023&nbsp;© All Rights Reserved.
+              </p>
+              <style type="text/css">
+                .copyright {
+                  padding: 15px 20px !important;
+                }
+              </style>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--============================== Footer End ==============================-->
+    <script src="include/js/jquery.min.js"></script>
+    <script src="include/js/bootstrap.min.js"></script>
+    <script src="include/js/main.js"></script>
+    <script src="include/js/custom.js"></script>
+  </body>
+</html>

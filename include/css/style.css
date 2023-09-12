@@ -3549,6 +3549,9 @@ h2.rv_name {
 }
 
 /* Product Details CSS */
+.product-details-content {
+  padding-left: 40px;
+}
 .product-details-content h2 {
   font-size: 32px;
   line-height: 45px;
@@ -3797,7 +3800,7 @@ h2.rv_name {
 }
 .product-details-content .pro-details-meta ul li a {
   color: #1a1a1a;
-  font-size: 12px;
+  font-size: 14px;
 }
 .product-details-content .pro-details-meta ul li a:hover {
   color: rgb(200, 157, 137);
@@ -4839,7 +4842,8 @@ h2.rv_name {
 .form-box-container input[type="email"],
 .form-box-container textarea,
 .form-box-container select,
-.form-box-container input[type="file"] {
+.form-box-container input[type="file"],
+.form-box-container input[type="number"] {
   width: 100%;
   padding: 10px;
   /* border: 1px solid #000; */
@@ -5372,11 +5376,13 @@ h2.rv_name {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
+  .form-cart-content {
+    flex-direction: column !important;
+  }
   .shop-info-content {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
-
   }
   .icons-info-container {
     flex-wrap: wrap;
@@ -5386,14 +5392,16 @@ h2.rv_name {
     width: 47%;
   }
   .shop-info {
-
     width: 100%;
     text-align: center;
-
   }
   .showroom-get-touch-content h2,
   .map-container iframe,
   .map-container {
+    width: 100%;
+  }
+  .form-box-container {
+    max-width: 100%;
     width: 100%;
   }
   /* ==================== footer ========================== */
