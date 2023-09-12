@@ -5646,6 +5646,13 @@ h2.rv_name {
   .about-us-main-img img {
     height: 500px;
   }
+  .cart-item-content {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .cart-image img {
+    width: 100%;
+  }
 }
 /* ======================================================
  ! Extra small devices (portrait phones, less than 576px)
