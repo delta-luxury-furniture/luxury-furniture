@@ -5410,6 +5410,10 @@ h2.rv_name {
     max-width: 100%;
     width: 100%;
   }
+  .slider-title {
+    font-size: 40px;
+  }
+
   /* ==================== footer ========================== */
   .footer-content {
     flex-wrap: wrap;
@@ -5626,13 +5630,11 @@ h2.rv_name {
   .cart-image img {
     width: 100%;
   }
-  .banners-content-container .slick-prev {
-    display: none;
+  .banners-content-container .slick-prev,
+  .banners-content-container .slick-next {
+    display: none !important;
   }
 
-  .banners-content-container .slick-next {
-    display: none;
-  }
   .slider1 .subtitle {
     font-size: 2rem;
   }
@@ -5641,6 +5643,9 @@ h2.rv_name {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  .navbar-expand-xl .navbar-nav .nav-link:after {
+    display: none;
   }
 }
 /* ======================================================
