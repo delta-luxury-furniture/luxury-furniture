@@ -745,7 +745,7 @@ ul:not([class]) > li:last-child {
 .navbar-expand-xl .navbar-nav .nav-link {
   /* font-size: 18px; */
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   /* line-height: 43px; */
   font-weight: 500;
   color: #fff;
