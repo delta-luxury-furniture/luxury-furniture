@@ -5541,7 +5541,7 @@ h2.rv_name {
     position: relative;
   }
   .slider-title {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
   }
   .banner-content-container .slick-prev,
@@ -5625,6 +5625,22 @@ h2.rv_name {
   }
   .cart-image img {
     width: 100%;
+  }
+  .banners-content-container .slick-prev {
+    display: none;
+  }
+
+  .banners-content-container .slick-next {
+    display: none;
+  }
+  .slider1 .subtitle {
+    font-size: 2rem;
+  }
+  .slider1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
 /* ======================================================
