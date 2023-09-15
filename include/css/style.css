@@ -837,6 +837,7 @@ ul:not([class]) > li:last-child {
   border-left: 1px solid #b2a389;
   border-right: 1px solid #b2a389;
 }
+
 /* =================================== mega menu ======================================= */
 /* .navbar-expand-xl .navbar-nav .nav-item:hover .MegaMenu {
   opacity: 1;
@@ -1674,7 +1675,7 @@ ul:not([class]) > li:last-child {
 .explore-content-container {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/explore/A.jpg);
+  background-image: url(../images/brandfamily/brand3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -1683,7 +1684,11 @@ ul:not([class]) > li:last-child {
   align-items: center;
   position: relative;
 }
-
+.banner-content-container img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
 .lookbook-copy {
   display: flex;
   flex-direction: column;
@@ -2088,6 +2093,16 @@ h2.rv_name {
   height: 100%;
   width: 100%;
 }
+.collection-img {
+  width: 100%;
+  height: 700px;
+}
+
+.collection-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* ==================================================================================== */
 /* ================================= hero-bg-half-content ============================= */
@@ -2184,6 +2199,16 @@ h2.rv_name {
 .warm-content p {
   color: #333;
   margin-bottom: 1rem;
+}
+.warm-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.warm-img {
+  width: 100%;
+  height: 766px;
 }
 .hero-parsy-column-text {
   display: flex;
@@ -4632,6 +4657,11 @@ h2.rv_name {
   transition: left 0.5s ease, opacity 0.7s ease;
   opacity: 0;
 }
+.stl_product_image_box img {
+  height: 400px;
+  width: 375px;
+  object-fit: cover;
+}
 .stl_product_image_box:hover .slidein {
   left: 0;
   opacity: 1;
@@ -4909,13 +4939,14 @@ h2.rv_name {
   /* padding: 40px 0; */
 }
 .showroom-bg {
-  background: url(../images/showroom/showroombg.webp) center no-repeat;
+  background: url(../images/brandfamily/brand3.jpg) center no-repeat;
   /* height: 847px; */
   background-size: cover;
 }
 .showroom-get-touch-content h2 {
   width: calc(100% - 650px);
   text-align: center;
+  color: #fff;
 }
 .shop-info-content {
   display: flex;
@@ -4971,9 +5002,12 @@ h2.rv_name {
 
 .about-us-main-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.about-us-main-text h4 {
+  text-align: center;
 }
 
 .about-us-main-text {
@@ -4990,6 +5024,8 @@ h2.rv_name {
 }
 .about-full-content img {
   width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 /* ===================================  cart  css ========================================= */
 .cart-item-content {
