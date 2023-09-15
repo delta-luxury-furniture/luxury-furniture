@@ -2103,6 +2103,9 @@ h2.rv_name {
   height: 100%;
   object-fit: cover;
 }
+.img-collection-roll {
+  width: 50%;
+}
 
 /* ==================================================================================== */
 /* ================================= hero-bg-half-content ============================= */
@@ -5680,6 +5683,9 @@ h2.rv_name {
   }
   .navbar-expand-xl .navbar-nav .nav-link:after {
     display: none;
+  }
+  .img-collection-roll {
+    width: 100% !important;
   }
 }
 /* ======================================================
