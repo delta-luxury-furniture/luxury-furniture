@@ -37,272 +37,275 @@
     <!--============================== Header Start ==============================-->
     <header id="header">
       <nav class="navbar navbar-expand-xl">
-        <div class="container">
-          <div class="nav-inside">
-            <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mainNav"
-              aria-controls="mainNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="header-main-content">
-              <div class="header-top">
-                <div class="upper-header desktop-search">
-                  <div class="upper-header-left">
-                    <div class="search-box">
-                      <input
-                        class="search-txt"
-                        type="text"
-                        name=""
-                        placeholder="Type to Search"
-                      />
-                      <a class="search-btn" href="#">
-                        <img
-                          src="./include/images/header/search.svg"
-                          alt="search"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="collection-toggle">
-                  <a
-                    class="collection-toggler"
-                    data-bs-toggle="offcanvas"
-                    href="#offcanvasExample"
-                    role="button"
-                    aria-controls="offcanvasExample"
-                  >
-                    <span class="collection-toggler-icon"></span>
-                  </a>
-                </div>
-
-                <a class="navbar-brand" href="index.html"
-                  ><img src="include/images/deltalogo.png" alt=""
-                /></a>
-                <div class="search-container">
-                  <form
-                    class="ais-SearchBox-form"
-                    role="search"
-                    name="searchbar"
-                    action=""
-                    method="get"
-                  >
-                    <label for="search-input" class="algolia-input">
-                      <input
-                        id="search-input"
-                        class="ais-SearchBox-input hide"
-                        type="search"
-                        autocapitalize="off"
-                        autocomplete="off"
-                        autocorrect="off"
-                        placeholder="What are you looking for?"
-                        value=""
-                      />
-                      <button
-                        type="submit"
-                        title="Search"
-                        class="ais-SearchBox-submit"
-                      >
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M20.6464 21.3536C20.8417 21.5488 21.1583 21.5488 21.3536 21.3536C21.5488 21.1583 21.5488 20.8417 21.3536 20.6464L20.6464 21.3536ZM18.3824 10.9412C18.3824 15.0508 15.0508 18.3824 10.9412 18.3824V19.3824C15.6031 19.3824 19.3824 15.6031 19.3824 10.9412H18.3824ZM10.9412 18.3824C6.83153 18.3824 3.5 15.0508 3.5 10.9412H2.5C2.5 15.6031 6.27924 19.3824 10.9412 19.3824V18.3824ZM3.5 10.9412C3.5 6.83153 6.83153 3.5 10.9412 3.5V2.5C6.27924 2.5 2.5 6.27924 2.5 10.9412H3.5ZM10.9412 3.5C15.0508 3.5 18.3824 6.83153 18.3824 10.9412H19.3824C19.3824 6.27924 15.6031 2.5 10.9412 2.5V3.5ZM21.3536 20.6464L16.9196 16.2125L16.2125 16.9196L20.6464 21.3536L21.3536 20.6464Z"
-                            fill="#1C1C1C"
-                          ></path>
-                        </svg>
-                      </button>
-                    </label>
-                  </form>
-                </div>
-              </div>
-
-              <div class="collapse navbar-collapse" id="mainNav">
-                <div class="navbar-inside m-auto">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        data-bs-toggle="offcanvas"
-                        href="#offcanvasExample"
-                        role="button"
-                        aria-controls="offcanvasExample"
-                        >Product</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="shoplook.html">Shop the look</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" href="#">Lifestyle</a>
-                    </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="showroom.html">Showroom</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="aboutus.html">About</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="upper-header mobile-search">
-                  <div class="upper-header-left">
-                    <div class="search-box">
-                      <input
-                        class="search-txt"
-                        type="text"
-                        name=""
-                        placeholder="Type to Search"
-                      />
-                      <a class="search-btn" href="#">
-                        <img
-                          src="./include/images/header/search.svg"
-                          alt="search"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="offcanvas offcanvas-start"
-                tabindex="-1"
-                id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel"
-              >
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                    <a class="navbar-brand" href="index.html"
-                      ><img src="include/images/deltalogo2.png" alt=""
-                    /></a>
-                  </h5>
-                  <button
+         <div class="container-fluid">
+            <div class="nav-inside">
+             
+               <div class="header-main-content">
+                  <div class="header-top">
+                    <button
+                    class="navbar-toggler collapsed"
                     type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div class="MegaMenu" aria-hidden="true">
-                    <div class="MegaMenu__Inner">
-                      <div class="MegaMenu__Item MegaMenu__Item--fit">
-                        <a
-                          href="#"
-                          class="MegaMenu__Title Heading Text--subdued u-h7"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                      <div class="navbar-inside m-auto">
+                        <div
+                        class="row os-animation"
+                        data-os-animation="fadeInUp"
+                        data-os-animation-delay="0.7s"
                         >
-                          COLLECTIONS
-                        </a>
-                        <ul class="Linklist">
-                          <li class="Linklist__Item">
-                            <a href="/sofa.html" class="Link Link--secondary"
-                              >Sofa's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/armchair.html"
-                              class="Link Link--secondary"
-                              >Armchair's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/Officeswivelchairs.html"
-                              class="Link Link--secondary"
-                              >Office Swivel Chair's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/bedstool.html"
-                              class="Link Link--secondary"
-                              >Bed Stool's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a href="/pouf.html" class="Link Link--secondary"
-                              >Pouf's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a href="/chair.html" class="Link Link--secondary"
-                              >Chair's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/barchair.html"
-                              class="Link Link--secondary"
-                              >Bar Chair</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/modularcabinet.html"
-                              class="Link Link--secondary"
-                              >Modular Cabinet's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/coffeetable.html"
-                              class="Link Link--secondary"
-                              >Coffee Tables</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a href="/beds.html" class="Link Link--secondary"
-                              >Bed's</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/sideboards.html"
-                              class="Link Link--secondary"
-                              >Sideboards</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/bedsidecabinet.html"
-                              class="Link Link--secondary"
-                              >Bedside cabinet</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a
-                              href="/diningtables.html"
-                              class="Link Link--secondary"
-                              >Dining Tables</a
-                            >
-                          </li>
-                          <li class="Linklist__Item">
-                            <a href="/desk.html" class="Link Link--secondary"
-                              >Desks</a
-                            >
-                          </li>
-                        </ul>
+                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                              
+                               <!-- <a class="nav-link " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> -->
+                                <a class="nav-link " >
+                                  <div class="nav-link-image">
+                                <img src="./include/images/brandfamily/brand1.jpg" alt="product" />
+                              </div>
+                                Product</a>
+                                <ul class="Linklist">
+                                  <li class="Linklist__Item">
+                                     <a href="/sofa.html" class="Link Link--secondary"
+                                        >Sofa's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/armchair.html" class="Link Link--secondary"
+                                        >Armchair's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/Officeswivelchairs.html" class="Link Link--secondary"
+                                        >Office Swivel Chair's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/bedstool.html" class="Link Link--secondary"
+                                        >Bed Stool's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/pouf.html" class="Link Link--secondary"
+                                        >Pouf's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/chair.html" class="Link Link--secondary"
+                                        >Chair's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/barchair.html" class="Link Link--secondary"
+                                        >Bar Chair</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/modularcabinet.html" class="Link Link--secondary"
+                                        >Modular Cabinet's</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/coffeetable.html" class="Link Link--secondary"
+                                        >Coffee Tables</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/beds.html" class="Link Link--secondary">Bed's</a>
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/sideboards.html" class="Link Link--secondary"
+                                        >Sideboards</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/bedsidecabinet.html" class="Link Link--secondary"
+                                        >Bedside cabinet</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/diningtables.html" class="Link Link--secondary"
+                                        >Dining Tables</a
+                                        >
+                                  </li>
+                                  <li class="Linklist__Item">
+                                     <a href="/desk.html" class="Link Link--secondary">Desks</a>
+                                  </li>
+                               </ul>
+                               
+                            </li>
+                            <li class="nav-item">
+                              
+                               <a class="nav-link" href="shoplook.html">
+                                <div class="nav-link-image">
+                                <img src="./include/images/collection/collection1.jpg" alt="product" />
+                                </div>
+                                Shop the look</a>
+                            </li>
+                            <li class="nav-item">
+                              
+                               <a class="nav-link" href="showroom.html">
+                                <div class="nav-link-image">
+                                <img src="./include/images/collection/collection2.jpg" alt="product" />
+                                </div>
+                                Showroom</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="aboutus.html">
+                                <div class="nav-link-image">
+                              <img src="./include/images/collection/top-collection.jpg" alt="product" />
+                              </div>
+                              About</a>
+                            </li>
+                         </ul>
+                        </div>
                       </div>
-                    </div>
+                      <div class="upper-header mobile-search">
+                         <div class="upper-header-left">
+                            <div class="search-box">
+                               <input
+                                  class="search-txt"
+                                  type="text"
+                                  name=""
+                                  placeholder="Type to Search"
+                                  />
+                               <a class="search-btn" href="#">
+                               <img
+                                  src="./include/images/header/search.svg"
+                                  alt="search"
+                                  />
+                               </a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                    
+                     <div class="collection-toggle">
+                        <a
+                           class="collection-toggler"
+                           data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+                           >
+                        <span class="collection-toggler-icon"></span>
+                        </a>
+                     </div>
+                     
+                     <div class="search-container">
+                        <form class="ais-SearchBox-form" role="search" name="searchbar" action="" method="get">
+                           <label for="search-input" class="algolia-input">
+                              <input id="search-input" class="ais-SearchBox-input hide" type="search" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="What are you looking for?" value="">
+                              <button type="submit" title="Search" class="ais-SearchBox-submit">
+                                 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6464 21.3536C20.8417 21.5488 21.1583 21.5488 21.3536 21.3536C21.5488 21.1583 21.5488 20.8417 21.3536 20.6464L20.6464 21.3536ZM18.3824 10.9412C18.3824 15.0508 15.0508 18.3824 10.9412 18.3824V19.3824C15.6031 19.3824 19.3824 15.6031 19.3824 10.9412H18.3824ZM10.9412 18.3824C6.83153 18.3824 3.5 15.0508 3.5 10.9412H2.5C2.5 15.6031 6.27924 19.3824 10.9412 19.3824V18.3824ZM3.5 10.9412C3.5 6.83153 6.83153 3.5 10.9412 3.5V2.5C6.27924 2.5 2.5 6.27924 2.5 10.9412H3.5ZM10.9412 3.5C15.0508 3.5 18.3824 6.83153 18.3824 10.9412H19.3824C19.3824 6.27924 15.6031 2.5 10.9412 2.5V3.5ZM21.3536 20.6464L16.9196 16.2125L16.2125 16.9196L20.6464 21.3536L21.3536 20.6464Z" fill="#1C1C1C"></path>
+                                 </svg>
+                              </button>
+                           </label>
+                        </form>
+                     </div>
                   </div>
-                </div>
-              </div>
+                  <a class="navbar-brand" href="index.html"
+                  ><img src="include/images/deltalogo.png" alt=""
+                  /></a>
+                  
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                     <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">   <a class="navbar-brand" href="index.html"
+                           ><img src="include/images/deltalogo2.png" alt=""
+                           /></a>  </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <div class="MegaMenu" aria-hidden="true">
+                           <div class="MegaMenu__Inner">
+                              <div class="MegaMenu__Item MegaMenu__Item--fit">
+                                 <a
+                                    href="#"
+                                    class="MegaMenu__Title Heading Text--subdued u-h7"
+                                    >
+                                 COLLECTIONS
+                                 </a>
+                                 <ul class="Linklist">
+                                    <li class="Linklist__Item">
+                                       <a href="/sofa.html" class="Link Link--secondary"
+                                          >Sofa's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/armchair.html" class="Link Link--secondary"
+                                          >Armchair's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/Officeswivelchairs.html" class="Link Link--secondary"
+                                          >Office Swivel Chair's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/bedstool.html" class="Link Link--secondary"
+                                          >Bed Stool's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/pouf.html" class="Link Link--secondary"
+                                          >Pouf's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/chair.html" class="Link Link--secondary"
+                                          >Chair's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/barchair.html" class="Link Link--secondary"
+                                          >Bar Chair</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/modularcabinet.html" class="Link Link--secondary"
+                                          >Modular Cabinet's</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/coffeetable.html" class="Link Link--secondary"
+                                          >Coffee Tables</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/beds.html" class="Link Link--secondary">Bed's</a>
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/sideboards.html" class="Link Link--secondary"
+                                          >Sideboards</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/bedsidecabinet.html" class="Link Link--secondary"
+                                          >Bedside cabinet</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/diningtables.html" class="Link Link--secondary"
+                                          >Dining Tables</a
+                                          >
+                                    </li>
+                                    <li class="Linklist__Item">
+                                       <a href="/desk.html" class="Link Link--secondary">Desks</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </nav>
-    </header>
+   </header>
     <!--============================== Header End ==============================-->
 
     <!--============================== Main Start ==============================-->
