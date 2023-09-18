@@ -766,7 +766,8 @@ ul:not([class]) > li:last-child {
   width: 100%;
   object-fit: cover;
   transform: scale(1);
-  transition: opacity 0.3s ease, transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.3s ease,
+    transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .navbar-expand-xl .navbar-nav .nav-link:hover img {
   transform: scale(1.2);
@@ -4863,7 +4864,7 @@ h2.rv_name {
   border-radius: 12px;
   /* box-shadow: 0 0 5px 5px #00000020; */
   backdrop-filter: blur(5px);
-  background-color: #ffffff85;
+  background-color: #fff;
 }
 .form-box-container .form-group {
   margin-bottom: 20px;
@@ -5174,7 +5175,6 @@ h2.rv_name {
 .fixed #header {
   background: #eae8e2;
 }
- 
 
 #header:hover .navbar-toggler.collapsed .navbar-toggler-icon,
 #header:hover .navbar-toggler.collapsed .navbar-toggler-icon:before,
@@ -5309,7 +5309,6 @@ h2.rv_name {
     height: 80px;
   }
   .navbar-inside {
-
   }
 
   .dropdown-menu {
@@ -5550,7 +5549,8 @@ h2.rv_name {
   .navbar-collapse.collapsing {
     top: 54px;
   }
-  .navbar-collapse, .navbar-collapse.collapsing {
+  .navbar-collapse,
+  .navbar-collapse.collapsing {
     width: 60%;
   }
   .navbar-inside {
@@ -5692,7 +5692,6 @@ h2.rv_name {
   }
   .header-top {
     padding: 0;
-  
   }
   .header-top {
     justify-content: flex-start;
@@ -5775,7 +5774,6 @@ h2.rv_name {
   }
   .Linklist__Item a {
     font-size: 12px;
-
   }
   .Linklist {
     align-items: flex-start;
