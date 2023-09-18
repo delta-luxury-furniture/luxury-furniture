@@ -759,6 +759,7 @@ ul:not([class]) > li:last-child {
 .navbar-expand-xl .navbar-nav .nav-link .nav-link-image {
   overflow: hidden;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .navbar-expand-xl .navbar-nav .nav-link img {
   height: 212px;
