@@ -4999,7 +4999,7 @@ h2.rv_name {
 }
 .showroom-get-touch-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   /* padding: 40px 0; */
@@ -5078,6 +5078,35 @@ h2.rv_name {
   margin: 0;
 }
 /* ================= Content End - showroom ================= */
+
+
+/* ============================== contact us ================================ */
+.contact-content-store img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+}
+.contact-content-store {
+  padding: 20px;
+}
+
+.contact-content-store h4 {
+  text-align: center;
+  line-height: 60px;
+  border-bottom: 1px solid #dddddd;
+}
+.contact-content-store .footer-address-item h4 {
+  border: none;
+  text-align: left;
+  line-height: 40px;
+  font-size: 17px;
+}
+.contact-content-address {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+/* =========================================================================== */
 /* ==========================  about usss - ===================================== */
 
 .about-us-main-content {
