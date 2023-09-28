@@ -5020,6 +5020,20 @@ h2.rv_name {
   justify-content: space-between;
   flex-direction: row-reverse;
 }
+.showroom-content-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 30px;
+}
+
+.showroom-content-img img {
+  border-radius: 12px;
+  height: 100%;
+}
+.showroom-content-img img:last-child {
+  grid-column: 2 / 3;
+  justify-self: center;
+}
 
 .shop-name h4 {
   text-transform: uppercase;
