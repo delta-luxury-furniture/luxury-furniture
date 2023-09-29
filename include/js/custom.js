@@ -73,6 +73,7 @@ jQuery(document).ready(function ($) {
       autoplay: true,
       autoplaySpeed: 3000,
       speed: 2000,
+      vertical: true,
       // responsive: [
       //   {
       //     breakpoint: 991,
